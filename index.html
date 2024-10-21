@@ -1,19 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- meta tags, links to css, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Generative Design</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <h1>The Classic Tic-Tac Toe</h1>
+    <p>Current Player: <span id="player"></span></p>
+    <table>
+        <tr>
+            <td onclick="handlePlay('0')" id="0"></td>
+            <td onclick="handlePlay('1')" id="1"></td>
+            <td onclick="handlePlay('2')" id="2"></td>
+        </tr>
+        <tr>
+            <td onclick="handlePlay('3')" id="3"></td>
+            <td onclick="handlePlay('4')" id="4"></td>
+            <td onclick="handlePlay('5')" id="5"></td>
+        </tr>
+        <tr>
+            <td onclick="handlePlay('6')" id="6"></td>
+            <td onclick="handlePlay('7')" id="7"></td>
+            <td onclick="handlePlay('8')" id="8"></td>
+        </tr>
+    </table>
 
-    <!-- visible content goes here -->
-	<h1>Generative Design</h1>
-	<p>See README.md for info</p>
-
-    <!-- load javascript after the page elements render -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
