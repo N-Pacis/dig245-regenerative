@@ -1,14 +1,21 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Generative Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-    <h1>The Classic Tic-Tac Toe</h1>
-    <p>Current Player: <span id="player"></span></p>
+    <h1 class="game-title">The Classic Tic-Tac Toe</h1>
+    <p class="current-player-indicator"><span id="player"></span><span id="play-description"></span></p>
     <table>
         <tr>
             <td onclick="handlePlay('0')" id="0"></td>
@@ -29,4 +36,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
